@@ -207,13 +207,13 @@ export default function CampaignSingle({
               >
                 {description}
               </Text>
-              <Link
+              {/* <Link
                 color="teal.500"
                 href={`https://rinkeby.etherscan.io/address/${id}`}
                 isExternal
               >
                 View on Rinkeby Etherscan <ExternalLinkIcon mx="2px" />
-              </Link>
+              </Link> */}
               <Box mx={"auto"} w={"full"}>
                 <SimpleGrid columns={{ base: 1 }} spacing={{ base: 5 }}>
                   <StatsCard

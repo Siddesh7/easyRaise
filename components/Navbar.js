@@ -73,7 +73,10 @@ export default function NavBar() {
                   zIndex: -1,
                 }}
               >
-                <NextLink href="/">🤝BetterFund</NextLink>
+                <img
+                  width={"40px"}
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAA6dJREFUeF7tnTFuWzEQBakupU8iwEDq3ManEFIZOYWPodqN6wAGfBKrc6cA7lL+nQUeCU7qLEm/HQ35v76k0+18vQ//bZvASQC27f33Hy4Ae/dfADbvvwAIgIfArRnwDLB1+z0Ebt5+ARAA7wPszYBngL3772Xg5v0XAAHwPsDWDHgG2Lr9XgZu3v4GAP7++YVC/Hl5Q/V0fjT5GCO9fjo/3gJoA+gfQOcXAHgIpA0QgKxBNQBUQBpgOr8ACAB7KNQtIHuI1QDwKgQKwKsADaAB0IuIKowCiBbvfYAxaAMEwMtA9CKkAKLJNYAGSBuMzu99AKgA2gBqMDq/AAiAN4IIA/QVqAF8O5jwh29E4S0ArX7wQySdP11PDULXLwA0QVgvAOF7+bB/uFwABABDRAZwCyDpNdRqAA3QgFF9CA1Qz66lUgNogBaQqoNogGpyTXUaQAM0oVQbRgPUcmur0gAaoA2mykAaoJJaY40G0ACNOB0fSgMcz6y1QgNogFagjg6GDfDy43x0zv/+/9PXB6pfvTidnwCECRIADYAQpAbVACh+XqwBNACiSAOg+PLFGkADIAo1AIovX6wBNACiUAOg+PLFGkADIAo1AIovX6wBNACiUAOg+PLFGkADIAo1AIovXxw3wOv1ds/H4ApSCZwEIBX9HPMKwBx9iK1CAGLRzzGxAMzRh9gqBCAW/RwTC8AcfYitQgBi0c8xsQDM0YfYKgQgFv0cEwvAHH2IrUIAYtHPMbEAzNGH2CoEIBb9HBMLwBx9iK1CAGLRzzEx/nAo/cULGsP78ycdAtU//n5A9bSYfsOIAMAOCED4K140APvpWg2gAbK/GgbzHxpAA1CGUL1nAM8ACCBa7FWAl4GIIQ+BKL4x3ALcAiBCrNwtwC0AEeQWgOJzCxi+F+B7AfA1xMq9EeSNIEYQrPYqwKsAiBArx1cB6Y+H0z8gfQZZff3xJ4JWD3D19QsAM/AQgM0DFAABQAmkzzBuAah9wy0A5rd8gG4BkIDVA1x9/W4BmwMsAAKQ/abQ1RW6+vo1gAbQAIQBDUDSG+tfRwuAAKAEvBN4YU+0pANc3gC3M/tsIMJ/jPgzhXT9tJ4CROfHTwXTBaRfwXT9tF4Awo+U0QbSegEQAMoQqncLQPHxYg2gAThFYAQNAMLrKNUAGqCDo/IYGqAcXU+hBtAAPSQVR9EAxeC6yjSABuhiqTSOBijF1lekATRAH02FkTRAIbTOEg2gATp5OjzWP4LKiw42hPSbAAAAAElFTkSuQmCC"
+                />
               </Box>
             </Heading>
           </Flex>
@@ -91,14 +94,6 @@ export default function NavBar() {
               display={{ base: "none", md: "inline-flex" }}
             >
               <NextLink href="/campaign/new">Create Campaign</NextLink>
-            </Button>
-            <Button
-              fontSize={"md"}
-              fontWeight={600}
-              variant={"link"}
-              display={{ base: "none", md: "inline-flex" }}
-            >
-              <NextLink href="/#howitworks"> How it Works</NextLink>
             </Button>
 
             {wallet.status === "connected" ? (
@@ -131,13 +126,7 @@ export default function NavBar() {
                 </Button>
               </div>
             )}
-
-            <DarkModeSwitch />
           </Stack>
-
-          <Flex display={{ base: "flex", md: "none" }}>
-            <DarkModeSwitch />
-          </Flex>
         </Container>
       </Flex>
     </Box>

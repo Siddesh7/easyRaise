@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { UseWalletProvider } from "use-wallet";
 import NavBar from "../components/Navbar";
-import Footer from "../components/Footer";
+
 import "@fontsource/space-grotesk";
 
 const theme = extendTheme({
@@ -28,7 +28,6 @@ function MyApp({ Component, pageProps }) {
         >
           <NavBar />
           <Component {...pageProps} />
-          <Footer />{" "}
         </UseWalletProvider>
       </ChakraProvider>
     </>

@@ -194,7 +194,7 @@ const RequestRow = ({
         </Tooltip>
         {request.complete ? (
           <Tooltip
-              label="This Request has been finalized & withdrawn to the recipient,it may then have less no of approvers"
+            label="This Request has been finalized & withdrawn to the recipient,it may then have less no of approvers"
             bg={useColorModeValue("white", "gray.700")}
             placement={"top"}
             color={useColorModeValue("gray.800", "white")}

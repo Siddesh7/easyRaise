@@ -235,32 +235,6 @@ export default function Home({ campaigns }) {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <main className={styles.main}>
-        <Container py={{ base: "4", md: "12" }} maxW={"7xl"} align={"left"}>
-          {" "}
-          <Heading
-            textAlign={useBreakpointValue({ base: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-            as="h1"
-            py={4}
-          >
-            Crowdfunding using the powers of <br /> Crypto & Blockchain 😄{" "}
-          </Heading>
-          <NextLink href="/campaign/new">
-            <Button
-              display={{ sm: "inline-flex" }}
-              fontSize={"md"}
-              fontWeight={600}
-              color={"white"}
-              bg={"teal.400"}
-              _hover={{
-                bg: "teal.300",
-              }}
-            >
-              Create Campaign
-            </Button>
-          </NextLink>
-        </Container>
         <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
           <HStack spacing={2}>
             <SkeletonCircle size="4" />
@@ -297,49 +271,6 @@ export default function Home({ campaigns }) {
               <Skeleton height="25rem" />
             </SimpleGrid>
           )}
-        </Container>
-        <Container py={{ base: "4", md: "12" }} maxW={"7xl"} id="howitworks">
-          <HStack spacing={2}>
-            <SkeletonCircle size="4" />
-            <Heading as="h2" size="lg">
-              How BetterFund Works
-            </Heading>
-          </HStack>
-          <Divider marginTop="4" />
-          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} py={8}>
-            <Feature
-              icon={<Icon as={FcDonate} w={10} h={10} />}
-              title={"Create a Campaign for Fundraising"}
-              text={
-                "It’ll take only 2 minutes. Just enter a few details about the funds you are raising for."
-              }
-            />
-            <Feature
-              icon={<Icon as={FcShare} w={10} h={10} />}
-              title={"Share your Campaign"}
-              text={
-                "All you need to do is share the Campaign with your friends, family and others. In no time, support will start pouring in."
-              }
-            />
-            <Feature
-              icon={<Icon as={FcMoneyTransfer} w={10} h={10} />}
-              title={"Request and Withdraw Funds"}
-              text={
-                "The funds raised can be withdrawn directly to the recipient when 50% of the contributors approve of the Withdrawal Request."
-              }
-            />
-          </SimpleGrid>
-          <Heading as="h2" size="lg" mt="8">
-            For any queries raise an issue on{" "}
-            <Link
-              color="teal.500"
-              href="https://github.com/harsh242/betterfund-crowdfunding-in-blockchain/issues"
-              isExternal
-            >
-              the Github Repo <ExternalLinkIcon mx="2px" />
-            </Link>{" "}
-          </Heading>
-          <Divider marginTop="4" />
         </Container>
       </main>
     </div>
