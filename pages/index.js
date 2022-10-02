@@ -227,12 +227,15 @@ export default function Home({ campaigns }) {
   return (
     <div>
       <Head>
-        <title>BetterFund</title>
+        <title>EasyRaise</title>
         <meta
           name="description"
           content="Transparent Crowdfunding in Blockchain"
         />
-        <link rel="icon" href="/logo.svg" />
+        <link
+          rel="icon"
+          href="https://drive.google.com/file/d/1Bz8tkL5iETmutoEg1AybYo0jz_fln28K/view?usp=sharing"
+        />
       </Head>
       <main className={styles.main}>
         <Container py={{ base: "4", md: "12" }} maxW={"7xl"}>
