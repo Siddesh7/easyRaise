@@ -18,11 +18,11 @@ function MyApp({ Component, pageProps }) {
       {" "}
       <ChakraProvider theme={theme}>
         <UseWalletProvider
-          chainId={4}
+          chainId={5}
           connectors={{
             walletconnect: {
               rpcUrl:
-                "https://eth-rinkeby.alchemyapi.io/v2/KWiWBNgKjB_dcp_bXLKF8HNg7pj_9w8S",
+                "https://eth-goerli.g.alchemy.com/v2/j9X6tG_LSvuHpCTehf-jLyPPoRmpyTKU",
             },
           }}
         >

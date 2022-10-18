@@ -9,7 +9,7 @@ if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
   // we are on the server *OR* meta mask is not running
   // creating our own provider
   const provider = new Web3.providers.HttpProvider(
-    "https://eth-rinkeby.alchemyapi.io/v2/KWiWBNgKjB_dcp_bXLKF8HNg7pj_9w8S"
+    "https://eth-goerli.g.alchemy.com/v2/j9X6tG_LSvuHpCTehf-jLyPPoRmpyTKU"
   );
 
   web3 = new Web3(provider);
